@@ -11,19 +11,19 @@
 - localhost:3000/user/list -> User database.                                                                                                               
 
 ## Technology Stack
-Frontend:
+#### Frontend:
 - HTML5                                                                                                                                                                   
 - CSS3                                                                                                                                                                   
 - Vanilla JS                                                                                                                                                                         
 - HBS templating engine                                                                                                                                                     
 
-Backend:
+#### Backend:
 - Node.js                                                                                                                                         
 - Express                                                                                                                                                             
 
-Database:
--MongoDB                                                                                                                                                                 
--Mongoose
+#### Database:                                                                                                                                                                             
+- MongoDB                                                                                                                                                                 
+- Mongoose
 
 ## Features
 - Contact GUI which collects data.                                                                                                                                            
