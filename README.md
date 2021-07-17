@@ -1,5 +1,5 @@
 # CRUD_ContactDatabase
--CRUD Application to save Data.
+- CRUD Application to save Data.
 
 ## Steps to set up the project
 - Download the project files.
