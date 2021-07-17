@@ -1,5 +1,5 @@
 # CRUD_ContactDatabase
--Basic GUI to collect User Data
+-CRUD Application to save Data
 
 ## Steps to set up the project
 -Download the project files.
@@ -25,5 +25,7 @@ Database:
 -MongoDB
 
 ## Features
-Contact GUI with collects data and prints data                                             
-Saves Data to Database for future reference.
+-Contact GUI which collects data 
+-Shows all user data
+-Update and Delete data                                             
+-Saves Data to Database for future reference.
