@@ -1,0 +1,35 @@
+<h2 class=" font-extrabold text-6xl pb-8 text-white">Database</h2>
+<div class="btn pb-8">
+    <a class="outline-none border-2 
+    border-white rounded-2xl  hover:bg-yellow-400 px-8" href="/user">Add User</a>
+</div>
+
+<table class="">
+    <thead class="">
+        <tr class="border-b-2 border-white">
+    
+            <th class="pb-2 border-r-2 border-white">Name</th>
+            <th class="pb-2 border-r-2 border-white">Phone</th>
+            <th class="pb-2 border-r-2 border-white">Email</th>
+            <th class="pb-2 pl-2 pr-2 border-r-2 border-white">Update</th>
+            <th class="pb-2 pl-2 pr-2 ">Delete</th>
+
+        </tr>
+        
+    </thead>
+    <tbody class="  ">
+        {{#each Data}}
+        <tr> 
+            <td class="pl-5 pr-5 pt-3 border-r-2 border-white">{{this.name}}</td>
+            <td class="pl-5 pr-5 pt-3 border-r-2 border-white">{{this.phone}}</td>
+            <td class="pl-5 pr-5 pt-3 border-r-2 border-white">{{this.email}}</td>
+            <td class="pl-5 pr-5 pt-3 border-r-2 border-white"><a class="text-yellow-400" href="/user/{{this._id}}"><i class="fa fa-pencil fa-lg"
+                        aria-hidden="true"></i></a></td>
+            <td class="pl-5 pr-5 pt-3  "><a class="text-yellow-400" href="/user/delete/{{this._id}}"
+                    onclick="return confirm('Are you sure to delete this record ?');"><i class="fa fa-trash fa-lg"
+                        aria-hidden="true"></i></a></td>
+        
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

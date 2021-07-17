@@ -1,0 +1,26 @@
+
+<h2 class=" font-extrabold text-6xl pb-8 text-white">{{viewtitle}}</h2>
+
+<form action="/user" method="POST" id="myform" autocomplete="off">
+  <input type="hidden" name="_id" value="{{user._id}}">
+  <div class="input_field">
+    <input class="w-96 outline-none border-2 border-white rounded focus:ring-4 focus:ring-blue-600" type="text"
+      placeholder="Name" name="name" id="name" required />
+  </div>
+  <div class="input_field mt-3">
+    <input class="w-96 outline-none border-2 border-white rounded focus:ring-4 focus:ring-blue-600" type="text"
+      placeholder="Phone" name="phone" id="phone" required />
+  </div>
+  <div class="input_field mt-3">
+    <input class="w-96 outline-none border-2 border-white rounded focus:ring-4 focus:ring-blue-600" type="text"
+      placeholder="Email" name="email" id="email" required />
+  </div>
+  <div class="btn pt-4">
+    <input class="outline-none border-2 border-white rounded-2xl  hover:bg-yellow-400 px-8" type="submit" />
+  </div>
+  <div class="btn pt-4 ">
+    <a class="outline-none border-2 border-white rounded-2xl  hover:bg-yellow-400 px-8" href="/user/list">
+      DataBase</a>
+  </div>
+
+</form>
