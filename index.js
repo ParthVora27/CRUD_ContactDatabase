@@ -19,6 +19,7 @@ app.use(express.urlencoded({extended:true}));
 //middleware for handlebars files
 const static_path = path.join(__dirname, "/views/");
 app.set("views" , static_path);
+app.use(express.static(static_path));
 const dir_path = __dirname + "/views/layouts/"
 app.engine("hbs" , exphbs({
     extname: "hbs",
